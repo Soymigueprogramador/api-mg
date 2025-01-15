@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "api-mg",
+  "version": "1.0.0",
+  "description": "Creando la api para el proyecto de MG lo quiero 3D ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "author": "Miguel Salazar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
