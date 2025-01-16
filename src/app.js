@@ -13,14 +13,14 @@ const port = process.env.PORT || 3000
 // Configuracion de las variables de entorno.
 dotenv.config();
 
-// Middleware 
+// Middleware para procesar JSON y formularios
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Llamando a las rutas.
-app.use("/", router); 
+app.use("/", router);
 
 // Iniciando el servidor.
 app.listen(port, ( req, res ) => {
-  console.log(`Servidor escuchando en el puerto ${port}`);
+  console.log(`Servidor escuchando en el puerto http://localhost:${port}`);
 });

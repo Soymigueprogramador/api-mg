@@ -1,16 +1,17 @@
-// Importaciones de dependencias necesarias.
 import express from "express";
+import { 
+    inicio, 
+    clientsControllers, 
+    paginaClientes, 
+} from "../controllers/clients.controller.js";
 
-// Generando las rutas.
 const router = express.Router();
 
-// Rutas básicas.
-router.get("/", (req, res) => {
-  res.send("Bienvenido a la API MG lo quiero 3D");
-});
+// Ruta de inicio
+router.get("/", inicio);
 
-router.get("/nosotros", (req, res) => {
-  res.send("Página de Nosotros");
-});
+// Ruta para crear clientes
+router.post("/clients", clientsControllers);
+router.get("/clients", paginaClientes);
 
 export default router;
